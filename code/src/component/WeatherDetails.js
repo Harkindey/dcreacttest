@@ -32,20 +32,20 @@ const WeatherDetails = props => {
         <div className="column details">
           <div className="content">
             <p> Location: {props.data.location} </p> <p>{`Date: ${date_string}`} </p>
-            <p> Weather Description: {props.data.main} </p>{' '}
+            <p> Weather Description: {props.data.main} </p>
             <p>
-              {' '}
+              
               Wind: {props.data.speed}
-              {props.data.unit.dis}{' '}
+              {props.data.unit.dis}
             </p>
             <div>
               <button className="button is-light is-rounded" onClick={() => props.data.changeUnit('imperial')}>
-                {' '}
-                Imperial{' '}
+                
+                Imperial
               </button>
               <button className="button is-dark is-rounded" onClick={() => props.data.changeUnit('metric')}>
-                {' '}
-                Metric{' '}
+                
+                Metric
               </button>
             </div>
           </div>
