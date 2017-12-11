@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash'
 import './App.css';
 import 'weather-icons/css/weather-icons.min.css';
 import 'bulma/css/bulma.css';
@@ -34,7 +35,7 @@ class App extends Component {
     return (
       <div className=" App container is-widescreen">
         <Header />
-        {this.state.forcast === undefined ? (
+        {this.state.forcast === undefined || _.isEmpty(this.state.forcast)   ? (
           <main className="page_wait">
             <div className="loader" />
           </main>
