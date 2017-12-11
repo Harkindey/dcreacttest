@@ -1,0 +1,137 @@
+nav.navbar.level.pad {
+    padding: 5px 24px;
+}
+
+.navbar .title {
+    color: #fff !important
+}
+
+.nav-level a span.title.is-6 {
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+.nav-level a.active span.title.is-6 {
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-level a span.title.is-6 {
+        padding: 10px 15px;
+        margin: 0 10px;
+        color: #000000 !important;
+    }
+    .nav-level a.active span.title.is-6 {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w_icon,
+    .w_value {
+        font-size: 5rem !important;
+    }
+    .column.current_time p .time {
+        font-size: 5rem !important;
+    }
+}
+
+main.page_wait .loader {
+    -webkit-animation: spinAround 500ms infinite linear;
+    animation: spinAround 500ms infinite linear;
+    border: 2px solid #000;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 4em;
+    position: relative;
+    width: 4em;
+}
+
+main.page_wait {
+    width: 5rem;
+    margin: 150px auto;
+}
+
+.WeatherDetails {
+    position: relative;
+    top: 62px;
+}
+
+.column.details .content {
+    width: 70%;
+    float: right;
+    position: relative;
+    right: 40px;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin-bottom: .5rem !important;
+}
+
+@media screen and (min-width: 1408px) {
+    .container {
+        max-width: 1024px !important;
+        width: 1024px !important;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+    .container {
+        max-width: 1024px !important;
+        width: 1024px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px !important;
+        width: 1024px !important;
+    }
+}
+
+.column.w_i_v {
+    text-align: center;
+}
+
+.w_icon,
+.w_value {
+    margin-right: 30px;
+    font-size: 6rem;
+}
+
+.SunDetails {
+    position: relative;
+    top: 62px;
+    text-align: center;
+}
+
+.column.current_time p .time {
+    font-size: 6rem;
+}
+
+.sun_details>.columns>.content {
+    width: 70%;
+    margin: 9px auto;
+    font-size: 1.6rem;
+}
+
+sun_details>.columns>.content .s_icon {
+    font-size: 4rem;
+}
+
+.date,
+.c_head {
+    font-size: 1.5rem;
+}
+
+.s_icon {
+    font-size: 3.5rem;
+}
+
+.column.current_time {
+    margin-bottom: 10px;
+}
