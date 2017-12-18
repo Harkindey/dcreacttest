@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_KEY = 'd7234a3ae775d794f90889889bd0a2d4';
 const LOCATION_ID = '2332453';
-const URL = 'http://api.openweathermap.org/data/2.5/weather';
+const URL = 'https://api.openweathermap.org/data/2.5/weather';
 export default {
     getWeatherInfo: units => {
         return axios
