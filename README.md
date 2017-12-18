@@ -1,4 +1,4 @@
-Link to my Submissions (https://amazing-jones-fdfc71.netlify.com)[Weather App]
+Link to my Submissions (https://amazing-jones-fdfc71.netlify.com)
 
 Devcenter Reactjs Test
 ==================================
