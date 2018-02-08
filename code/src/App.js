@@ -40,8 +40,8 @@ class App extends Component {
             <div className="loader" />
           </main>
         ) : (
-          <Main data={this.state.forcast} changeUnit={this.chooseUnit} unit={this.state.unit} />
-        )}
+            <Main data={this.state.forcast} changeUnit={this.chooseUnit} unit={this.state.unit} />
+          )}
       </div>
     );
   }

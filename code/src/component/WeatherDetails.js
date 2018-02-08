@@ -5,9 +5,14 @@ const WeatherDetails = props => {
   console.log(props);
   let {
     unit,
-    data: { name, main: { temp }, dt, wind, weather: [details] }
-    , changeUnit
-} = props
+    data: { name,
+      main: { temp },
+      dt,
+      wind,
+      weather: [details]
+    },
+    changeUnit
+  } = props
 
   const date_string = moment
     .unix(dt)
