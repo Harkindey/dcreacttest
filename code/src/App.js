@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className=" App container is-widescreen">
         <Header />
-        {this.state.forcast === undefined || _.isEmpty(this.state.forcast)   ? (
+        {this.state.forcast === undefined || _.isEmpty(this.state.forcast) ? (
           <main className="page_wait">
             <div className="loader" />
           </main>

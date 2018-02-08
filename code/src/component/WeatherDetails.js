@@ -2,8 +2,15 @@ import React from 'react';
 import * as moment from 'moment';
 
 const WeatherDetails = props => {
+  console.log(props);
+  let {
+    unit,
+    data: { name, main: { temp }, dt, wind, weather: [details] }
+    , changeUnit
+} = props
+
   const date_string = moment
-    .unix(props.data.measure_date)
+    .unix(dt)
     .format('LLLL')
     .toString();
 
@@ -20,10 +27,10 @@ const WeatherDetails = props => {
                 <i className={`wi wi-day-${props.data.description} icon-size`} />
               </span>
               <span className="w_value">
-                {props.data.temp}
+                {temp}
                 <sup>
                   <sup>o</sup>
-                  {props.data.unit.deg}
+                  {unit.deg}
                 </sup>
               </span>
             </p>
@@ -31,20 +38,20 @@ const WeatherDetails = props => {
         </div>
         <div className="column details">
           <div className="content">
-            <p> Location: {props.data.location} </p> <p>{`Date: ${date_string}`} </p>
-            <p> Weather Description: {props.data.main} </p>
+            <p> Location: {name} </p> <p>{`Date: ${date_string}`} </p>
+            <p> Weather Description: {details.main} </p>
             <p>
-              
-              Wind: {props.data.speed}
-              {props.data.unit.dis}
+
+              Wind: {wind.speed}
+              {unit.dis}
             </p>
             <div>
-              <button className="button is-light is-rounded" onClick={() => props.data.changeUnit('imperial')}>
-                
+              <button className="button is-light is-rounded" onClick={() => changeUnit('imperial')}>
+
                 Imperial
               </button>
-              <button className="button is-dark is-rounded" onClick={() => props.data.changeUnit('metric')}>
-                
+              <button className="button is-dark is-rounded" onClick={() => changeUnit('metric')}>
+
                 Metric
               </button>
             </div>
